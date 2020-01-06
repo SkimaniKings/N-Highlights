@@ -10,8 +10,8 @@ def index():
     """
  A view root page function that returns the index page and its data
     """
-    newsapi = NewsApiClient(api_key="6530e4aa762c497d83c8aa95953c3750")
-    topheadlines = newsapi.get_top_headlines(sources="al-jazeera-english")
+    newsapi = NewsApiClient(api_key="28d135ff8b27447caf2f3b7cd13fb15a")
+    topheadlines = newsapi.get_top_headlines(sources="abc-news-au")
     
     articles = topheadlines['articles']
     
