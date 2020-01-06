@@ -28,4 +28,6 @@ def index():
         image.append(myarticles['urlToImage'])
         date.append(myarticles['publishedAt'])
         
+        mylist = zip(heading,news,image,date)
+        
  
