@@ -18,4 +18,7 @@ def index():
     description= []
     news = []
     imgage = []
+    
+    for i in range(len(articles)):
+        myarticles = articles[i]
  
