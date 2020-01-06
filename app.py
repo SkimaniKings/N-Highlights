@@ -10,25 +10,26 @@ def index():
     """
  A view root page function that returns the index page and its data
     """
-    newsapi = NewsApiClient(api_key="9928e2b4e73e42319e3b5832e0c6c672")
-    topheadlines = newsapi.get_top_headlines(sources="abc-news")
+    newsapi = NewsApiClient(api_key="6530e4aa762c497d83c8aa95953c3750")
+    topheadlines = newsapi.get_top_headlines(sources="al-jazeera-english")
     
     articles = topheadlines['articles']
     
-    heading= []
+    desc = []
     news = []
-    image = []
-    date = []
+    img = []
+
     
     for i in range(len(articles)):
         myarticles = articles[i]
         
-        heading.append(myarticles['title'])
-        news.append(myarticles['description'])
-        image.append(myarticles['urlToImage'])
-        date.append(myarticles['publishedAt'])
+        news.append(myarticles['title'])
+        desc.append(myarticles['description'])
+        img.append(myarticles['urlToImage'])
+
+ 
         
-        mylist = zip(heading,news,image,date)
+        mylist = zip(news, desc, img)
         
         return render_template('index.htm', context = mylist)
 if __name__ == "__main__":
