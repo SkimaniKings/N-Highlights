@@ -1,3 +1,3 @@
 from flask import Flask
-import newsapi
+from newsapi import NewsApiClient
 
