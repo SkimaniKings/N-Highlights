@@ -35,12 +35,17 @@
     <div class="container">
 
         {% for new, img, des, pubAt,url in context%}
-
-        <img src="{{img}}" alt="news-images">
-        <h3>News: </h3> {{new}}
-        <h4>Description: </h4> {{des}}
-        <h4>Published at:</h4> {{pubAt}}
-        <a href="{{url}}"><button type="button" class="btn btn-outline-info">Read More</button></a>
+        <div class="card m-5" style="width: 500px;">
+            <img src="{{img}}" class="card-img-top" alt="news-images">
+            <div class="card-body">
+                <h3 class="card-title">News: </h3> {{new}}
+                <div class="card-text">
+                <h4>Description: </h4> {{des}}
+                <h4>Published at:</h4> {{pubAt}}
+                </div>
+                <a href="{{url}}"><button type="button" class="btn btn-outline-info">Read More</button></a>
+            </div>
+        </div>
 
         {% endfor %}
 
