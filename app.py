@@ -23,9 +23,9 @@ def index():
     for i in range(len(articles)):
         myarticles = articles[i]
         
-        news.append(myarticles['tittle'])
+        heading.append(myarticles['tittle'])
         news.append(myarticles['description'])
-        news.append(myarticles['urlToImage'])
-        news.append(myarticles['publishedAt'])
+        image.append(myarticles['urlToImage'])
+        date.append(myarticles['publishedAt'])
         
  
