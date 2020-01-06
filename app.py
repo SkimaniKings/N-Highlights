@@ -15,10 +15,17 @@ def index():
     
     articles = topheadlines['articles']
     
-    description= []
+    heading= []
     news = []
-    imgage = []
+    image = []
+    date = []
     
     for i in range(len(articles)):
         myarticles = articles[i]
+        
+        news.append(myarticles['tittle'])
+        news.append(myarticles['description'])
+        news.append(myarticles['urlToImage'])
+        news.append(myarticles['publishedAt'])
+        
  
