@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="ddd">
             <h1 class="heading">News<span>Highlights</span></h1>
@@ -34,24 +35,10 @@
     </div>
     <div class="container">
 
-        {% for new, img, des, pubAt,url in context%}
-      
-                <div class="card text-center m-5" style="width: 1000px;">
-                    <img src="{{img}}" class="card-img-top" alt="news-images">
-                    <div class="card-body">
-                        <h3 class="card-title">News: </h3> {{new}}
-                        <div class="card-text">
-                            <h4>Description: </h4> {{des}}<br><br>
-                            <a href="{{url}}"><button type="button" class="btn btn-outline-info m-3">Read More</button></a>
-                            <div class="card-footer text-muted">
-                                <h4>Published at:</h4> {{pubAt}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           
-
-        {% endfor %}
+        <div class="col-md-6">
+            <h1 style="padding: 5%;" class="card d-flex flex-column justify-content-center align-items-center"><a
+                    href="{{url_for('abc')}}">Abc News</a></h1>
+        </div>
 
 
 

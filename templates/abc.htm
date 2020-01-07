@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>News-Highlights</title>
+</head>
+
+{% for new, img, des, pubAt,url in context%}
+<div class="container">
+
+    <div class="card text-center m-5" style="width: 1000px;">
+        <img src="{{img}}" class="card-img-top" alt="news-images">
+        <div class="card-body">
+            <h3 class="card-title">News: </h3> {{new}}
+            <div class="card-text">
+                <h4>Description: </h4> {{des}}<br><br>
+                <a href="{{url}}"><button type="button" class="btn btn-outline-info m-3">Read More</button></a>
+                <div class="card-footer text-muted">
+                    <h4>Published at:</h4> {{pubAt}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endfor %}
