@@ -3,6 +3,7 @@
 - Author
 - Project Description
 - Project Screenshots
+- Setup Instructions
 - BDD
 - Technologies Used
 - Known bugs
@@ -20,8 +21,18 @@
 - News- Highlights is a project that was developed to facilitate easy access to news and information on what is happening around the world to a user. A user is able to access different news articles that come from different news sources.The project displays the news heading and a brief description of the news. Below each article is a readmore article that allows user to access the whole article from the source directly.
 
 ## Project Screenshots
+
 ![News Highlights](static/images/screenshot.png)
+
 - This is the landing page of the website.
+
+## Set Up Instructions
+
+- Open your terminal and move to a directory where you would like to store the project eg. cd Documents
+- Use the command `git clone` to clone the aplication at `https://github.com/SkimaniKings/News-Highlight`.
+- After cloning navigate to the project.
+- Run `pip install` to install all the dependencies
+- Now run the project using your terminal with the command `python3.6 app.py`
 
 ## BDD
 
