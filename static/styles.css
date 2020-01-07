@@ -22,3 +22,7 @@ body {
   font-family: 'Bangers', cursive;
   padding-top: 30px;
 }
+footer {
+    margin-bottom: 0px;
+    background-color: #000;
+}
