@@ -43,7 +43,7 @@ def abc():
  A view root page function that returns the index page and its data
     """
     newsapi = NewsApiClient(api_key="28d135ff8b27447caf2f3b7cd13fb15a")
-    topheadlines = newsapi.get_top_headlines(sources="abc-news-au")
+    topheadlines = newsapi.get_top_headlines(sources="abc-news")
     
     articles = topheadlines['articles']
      
@@ -107,7 +107,7 @@ def Cnn():
  A view root page function that returns the index page and its data
     """
     newsapi = NewsApiClient(api_key="28d135ff8b27447caf2f3b7cd13fb15a")
-    topheadlines = newsapi.get_top_headlines(sources="abc-news-au")
+    topheadlines = newsapi.get_top_headlines(sources="ars-technica")
     
     articles = topheadlines['articles']
      
@@ -131,7 +131,7 @@ def Cnn():
         
     mylist=zip(des,image,news,pubAt,url)
     return render_template('Cnn.htm', context = mylist)
-@app.route('/Aljazeera')
+@app.route('/Aljzeera')
 def Aljzeera():
     
     
